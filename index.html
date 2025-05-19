@@ -1,152 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Windber American Legion Post 137</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #000000;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
     }
     header {
-      background-color: #002147;
+      background-color: #000;
+      background-image: url('https://windberamericanlegionpost137.com/wp-content/uploads/2020/03/slider-1.jpg');
+      background-size: cover;
+      background-position: center;
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 80px 20px 100px;
+      position: relative;
     }
-    header img {
-      max-width: 100px;
-      display: block;
-      margin: 0 auto 10px;
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
     }
-    .container {
-      display: flex;
-      max-width: 1200px;
-      margin: 20px auto;
-      background-color: white;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    header h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 2.5rem;
+      margin: 0;
     }
     nav {
-      width: 250px;
-      background-color: #f1c232;
-      padding: 20px;
-      box-sizing: border-box;
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     nav a {
-      display: block;
-      color: #002147;
+      color: #f1c232;
+      margin: 0 15px;
       text-decoration: none;
-      margin-bottom: 10px;
       font-weight: bold;
     }
     nav a:hover {
       text-decoration: underline;
     }
     main {
-      flex: 1;
-      padding: 20px;
-      box-sizing: border-box;
-      background-color: #ffffff;
+      max-width: 1000px;
+      margin: 40px auto;
+      background-color: #222;
+      padding: 30px;
+      border-radius: 8px;
     }
     section {
       margin-bottom: 40px;
     }
     h2 {
-      color: #002147;
       border-bottom: 2px solid #f1c232;
       padding-bottom: 5px;
+      color: #f1c232;
     }
     .officer-list {
-      list-style-type: none;
-      padding-left: 0;
+      list-style: none;
+      padding: 0;
     }
     .officer-list li {
       margin: 5px 0;
     }
     footer {
-      background-color: #002147;
-      color: white;
       text-align: center;
-      padding: 10px;
+      background-color: #000;
+      color: #ccc;
+      padding: 20px;
+      margin-top: 40px;
     }
-    .img-preview {
+    img.img-preview {
       width: 100%;
-      max-width: 400px;
+      max-width: 600px;
       height: auto;
-      margin-top: 10px;
+      display: block;
+      margin-top: 20px;
+      border: 3px solid #f1c232;
+      border-radius: 4px;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://windberamericanlegionpost137.com/wp-content/uploads/2020/03/cropped-legion-logo-2.png" alt="Legion Logo">
     <h1>Windber American Legion Post 137</h1>
   </header>
-  <div class="container">
-    <nav>
-      <a href="#calendar">Club Calendar</a>
-      <a href="#kitchen">Kitchen</a>
-      <a href="#riders">Riders</a>
-      <a href="#sons">Sons</a>
-      <a href="#auxiliary">Auxiliary</a>
-      <a href="#post">Post</a>
-      <a href="#resources">Resources</a>
-    </nav>
-    <main>
-      <section id="calendar">
-        <h2>Club Calendar</h2>
-        <p>[Embed or link to calendar goes here]</p>
-      </section>
-      <section id="kitchen">
-        <h2>Kitchen</h2>
-        <p>[Embed kitchen specials calendar and link menu]</p>
-        <img class="img-preview" src="https://windberamericanlegionpost137.com/wp-content/uploads/2020/03/slider-2.jpg" alt="Kitchen Specials Preview">
-      </section>
-      <section id="riders">
-        <h2>Riders</h2>
-        <ul class="officer-list">
-          <li>President: TBD</li>
-          <li>Vice President: TBD</li>
-          <li>Secretary: TBD</li>
-        </ul>
-      </section>
-      <section id="sons">
-        <h2>Sons</h2>
-        <ul class="officer-list">
-          <li>Commander: TBD</li>
-          <li>Vice Commander: TBD</li>
-          <li>Adjutant: TBD</li>
-        </ul>
-      </section>
-      <section id="auxiliary">
-        <h2>Auxiliary</h2>
-        <ul class="officer-list">
-          <li>President: TBD</li>
-          <li>Vice President: TBD</li>
-          <li>Secretary: TBD</li>
-        </ul>
-      </section>
-      <section id="post">
-        <h2>Post</h2>
-        <ul class="officer-list">
-          <li>Commander: TBD</li>
-          <li>1st Vice Commander: TBD</li>
-          <li>Adjutant: TBD</li>
-        </ul>
-        <img class="img-preview" src="https://windberamericanlegionpost137.com/wp-content/uploads/2020/03/slider-1.jpg" alt="Post Exterior Preview">
-      </section>
-      <section id="resources">
-        <h2>Resources</h2>
-        <ul>
-          <li><a href="https://www.va.gov" target="_blank">U.S. Department of Veterans Affairs</a></li>
-          <li><a href="https://www.legion.org" target="_blank">The American Legion National</a></li>
-          <li><a href="https://benefits.va.gov" target="_blank">VA Benefits</a></li>
-        </ul>
-      </section>
-    </main>
-  </div>
+  <nav>
+    <a href="#calendar">Club Calendar</a>
+    <a href="#kitchen">Kitchen</a>
+    <a href="#riders">Riders</a>
+    <a href="#sons">Sons</a>
+    <a href="#auxiliary">Auxiliary</a>
+    <a href="#post">Post</a>
+    <a href="#resources">Resources</a>
+  </nav>
+  <main>
+    <section id="calendar">
+      <h2>Club Calendar</h2>
+      <p>[Embed or link to calendar goes here]</p>
+    </section>
+
+    <section id="kitchen">
+      <h2>Kitchen</h2>
+      <p>[Embed kitchen specials calendar and link menu]</p>
+      <img class="img-preview" src="https://yourusername.github.io/your-repo-name/ALPhoto2.webp" alt="Kitchen Preview">
+    </section>
+
+    <section id="riders">
+      <h2>Riders</h2>
+      <ul class="officer-list">
+        <li>President: TBD</li>
+        <li>Vice President: TBD</li>
+        <li>Secretary: TBD</li>
+      </ul>
+    </section>
+
+    <section id="sons">
+      <h2>Sons</h2>
+      <ul class="officer-list">
+        <li>Commander: TBD</li>
+        <li>Vice Commander: TBD</li>
+        <li>Adjutant: TBD</li>
+      </ul>
+    </section>
+
+    <section id="auxiliary">
+      <h2>Auxiliary</h2>
+      <ul class="officer-list">
+        <li>President: TBD</li>
+        <li>Vice President: TBD</li>
+        <li>Secretary: TBD</li>
+      </ul>
+    </section>
+
+    <section id="post">
+      <h2>Post</h2>
+      <ul class="officer-list">
+        <li>Commander: TBD</li>
+        <li>1st Vice Commander: TBD</li>
+        <li>Adjutant: TBD</li>
+      </ul>
+      <img class="img-preview" src="https://yourusername.github.io/your-repo-name/AmericanLegionPhoto.webp" alt="Post Image">
+    </section>
+
+    <section id="resources">
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="https://www.va.gov" target="_blank" style="color:#f1c232">U.S. Department of Veterans Affairs</a></li>
+        <li><a href="https://www.legion.org" target="_blank" style="color:#f1c232">The American Legion National</a></li>
+        <li><a href="https://benefits.va.gov" target="_blank" style="color:#f1c232">VA Benefits</a></li>
+      </ul>
+    </section>
+  </main>
   <footer>
     <p>&copy; 2025 Windber American Legion Post 137</p>
   </footer>
